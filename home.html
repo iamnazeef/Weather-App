@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./fav-icon/favIcon.png">
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header>
+
+        <!-- location and date  -->
+
+        <div class="location-and-date">
+            <div class="date-el">
+                <!-- Date -->
+                <p id="date"></p>
+            </div>
+            <div class="location-el">
+                <img src="./assets/location.svg" alt="location" class="location-icon" id="darkmodeicon">
+                <!-- Location -->
+                <label id="city">Enable Location and Reload</label>
+                <!-- Country -->
+                <label id="country"></label>
+            </div>
+        </div>
+
+        <!-- display mode  -->
+
+        <div class="display-mode">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-checker">
+                <img src="./assets/light-mode.svg" alt="lightmode" width="19px">
+                <img src="./assets/dark-mode.svg" alt="darkmode" width="17px">
+                <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+
+    <!-- main  -->
+    <main>
+        <div class="temp-el">
+
+            <!-- temp details  -->
+
+            <div class="temp-details">
+                <!-- temperature  -->
+                <p class="temp" id="temperature"></p>
+                <!-- unit  -->
+                <label class="unit" id="unit-el"></label>
+            </div>
+
+            <!-- weather description  -->
+            <div class="weather-details">
+                <div class="weathericon">
+                    <img src="" alt="weather icon" id="weather-con-icon">
+                </div>
+                <div class="description" id="desc"></div>
+            </div>
+
+            <!-- general details  -->
+
+            <div class="general-details">
+                <p class="wind" id="wind-details"></p>
+                <p class="humidity" id="humidity-details"></p>
+                <p class="feels-like" id="feels-like-details"></p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- footer  -->
+    <footer>
+
+        <p class="creator">Created By:<a href="https://github.com/iamnazeef" target="_blank">Nazeef</a>
+        </p>
+
+    </footer>
+
+    <script src="./js/home.js"></script>
+</body>
+
+</html>

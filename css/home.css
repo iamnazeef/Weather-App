@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+body {
+    background-color: wheat;
+    transition: background 0.2s linear;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 20px;
+}
+
+.location-and-date {
+    /* border: 2px solid red; */
+    font-weight: 600;
+}
+
+.location-el {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+#city {
+    margin-left: 6px;
+}
+
+#country {
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.display-mode {
+    padding-bottom: 4px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.checkbox-checker {
+    border: 2px solid black;
+    width: 48px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 2px;
+    transition: 0.2s ease-out;
+}
+
+.ball {
+    background-color: black;
+    height: 16px;
+    width: 16px;
+    top: 1px;
+    border-radius: 50px;
+    /* display: none; */
+    position: absolute;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+}
+
+#checkbox:checked+.checkbox-checker {
+    background-color: orange;
+}
+
+#checkbox:checked+.checkbox-checker .ball {
+    transform: translateX(24px);
+}
+
+.temp-el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.temp-details {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.unit {
+    font-size: 80px;
+    font-weight: 300;
+}
+
+.icon {
+    margin-right: 25px;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.general-details {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+a {
+    color: black;
+    margin-left: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.dark {
+    color: white;
+}
+
+#darkmodeicon.dark {
+    filter: invert(93%) sepia(0%) saturate(7467%) hue-rotate(103deg) brightness(107%) contrast(110%);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 18px
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        margin: 20px
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        margin: 23px
+    }
+}
